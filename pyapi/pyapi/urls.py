@@ -20,7 +20,11 @@ from imgshare import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name = 'home'),
-    path('posts/<str:posturl>/', views.getposts,),
-    path('users/<str:username>/', views.getusers,),
+    path('posts/<str:imageurl>/', views.getposts,),
+    path('users/<slug:username>/', views.getusers,),
     path('adduser/', views.adduser,),
+    path('follow/', views.follow,),
+    path('unfollow/', views.unfollow,),
+    path('upload/', views.uploadimg,),
+    path('like/', views.like,),
 ]

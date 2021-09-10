@@ -11,8 +11,8 @@ class Posts(models.Model):
 
 class Users(models.Model):
     username = models.CharField(max_length=100)
-    username = models.CharField(max_length=10000)
-    username = models.CharField(max_length=10000)
+    following = models.CharField(max_length=100)
+    followers = models.CharField(max_length=100)
     
     def __str__(self):
         return self.username
