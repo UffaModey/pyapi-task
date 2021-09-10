@@ -63,10 +63,7 @@ http://127.0.0.1:8000/posts/<str:imageurl>/
 
 request method: GET
 
-    - key - username
-        - Value - "name of user liking the image"
-    - key - imageurl
-        - Value - "url of image"
+    - slug:imageurl = url of image to GET
   
 7. View a user
 
@@ -74,10 +71,7 @@ http://127.0.0.1:8000/users/<slug:username>/
 
 request method: GET
 
-    - key - username
-        - Value - "name of user liking the image"
-    - key - imageurl
-        - Value - "url of image"
+    - slug:username = name of the user to GET
 
 ### Using the API
 
